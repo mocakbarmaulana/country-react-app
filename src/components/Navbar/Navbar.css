@@ -1,0 +1,78 @@
+.nav {
+  background-color: var(--White);
+  /* background: coral; */
+  height: 60px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  position: sticky;
+}
+
+.navBar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+
+.navlinkTitle {
+  font-weight: 800;
+  color: #000;
+  font-size: 24px;
+}
+
+.navbarMode {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Dark Mode */
+.darkMode {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputMode {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  cursor: pointer;
+}
+
+.textMode {
+  margin-left: 5px;
+}
+
+/* Tablet Version */
+@media (min-width: 320px) {
+  /* Header */
+  .navlinkTitle {
+    font-size: 16px;
+  }
+
+  .navbarMode {
+    font-size: 12px;
+  }
+  /* End Header */
+}
+
+@media (min-width: 961px) {
+  .navlinkTitle {
+    font-size: 24px;
+  }
+
+  .navbarMode {
+    font-size: 14px;
+  }
+
+  .textMode {
+    font-size: 16px;
+  }
+}
+
+/* Dark Mode */
+.dark .nav {
+  background-color: var(--Very-Dark-Blue);
+}
