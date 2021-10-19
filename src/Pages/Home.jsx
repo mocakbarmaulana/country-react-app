@@ -13,7 +13,7 @@ const Home = () => {
     setLoadingTime(true);
     async function fetchCountries() {
       try {
-        const resp = await axios.get("https://restcountries.eu/rest/v2/all");
+        const resp = await axios.get("https://restcountries.com/v3.1/all");
         setListCountries(resp.data);
         setLoadingTime(false);
       } catch (err) {
