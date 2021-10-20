@@ -13,9 +13,9 @@ const Home = () => {
     setLoadingTime(true);
     async function fetchCountries() {
       try {
-        const resp = await axios.get("https://restcountries.com/v3.1/all");
-        setListCountries(resp.data);
+        const resp = await axios.get("https://restcountries.com/v2/all");
         setLoadingTime(false);
+        setListCountries(resp.data);
       } catch (err) {
         console.error(err);
         setLoadingTime(false);
@@ -25,6 +25,7 @@ const Home = () => {
 
     fetchCountries();
   }, []);
+
 
   return (
     <>
